@@ -2,8 +2,8 @@ django.jQuery(function () {
 	var sortableChangelist = function () {
 		var init = function () {
 			// hide the position column
-			$('#result_list th:contains("Position")').hide();
-			$('#result_list input[id$="position"]').closest('td').hide();
+			// $('#result_list th:contains("Position")').hide();
+			// $('#result_list input[id$="position"]').closest('td').hide();
 			$('#result_list tbody tr').css('cursor', 'move');
 
 			$('#result_list tbody').sortable({
