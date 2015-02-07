@@ -2,7 +2,7 @@ django.jQuery(function () {
 	var sortableTabularInline = function () {
 		var init = function () {
 			// hide the position column
-			$('th:contains("Position"), td.field-position').hide();
+			$('th:contains("Position"), td.field-order').hide();
 
 			if($('.inline-related').find('input[name$=-INITIAL_FORMS]').val() <= 1){
 				return;
@@ -18,7 +18,7 @@ django.jQuery(function () {
 				cursor: 'move',
 				update: function (event, ui) {
 					$('.inline-related .form-row.has_original').each(function (i) {
-						$('input[id$=position]', this).val(i + 1);
+						$('input[id$=order]', this).val(i + 1);
 					});
 				},
 			});
