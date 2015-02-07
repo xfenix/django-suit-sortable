@@ -12,7 +12,7 @@ django.jQuery(function () {
 			// hide the position column
 			$('div.field-position').hide();
 			$('.inline-group h2:first').append(
-				'<span class="description">Заметка: переместите блоки для пересортировки. Новый блок необходимо сначала сохранить, а потом только можно будет его сортировать</span>'
+				'<span class="description">Заметка: переместите блоки для пересортировки</span>'
 			);
 
 			$('.inline-group').sortable({
